@@ -105,10 +105,10 @@ class AutoClicker:
         if current_time - self.last_check_time >= CHECK_INTERVAL:
             self.last_check_time = current_time
             templates = [
-                cv2.imread(os.path.join("template_images", "play_button.png"), cv2.IMREAD_GRAYSCALE),
-                cv2.imread(os.path.join("template_images", "play_button1.png"), cv2.IMREAD_GRAYSCALE),
-                cv2.imread(os.path.join("template_images", "close_button.png"), cv2.IMREAD_GRAYSCALE),
-                cv2.imread(os.path.join("template_images", "captcha.png"), cv2.IMREAD_GRAYSCALE)
+                cv2.imread(os.path.join("images", "play_button.png"), cv2.IMREAD_GRAYSCALE),
+                cv2.imread(os.path.join("images", "play_button1.png"), cv2.IMREAD_GRAYSCALE),
+                cv2.imread(os.path.join("images", "close_button.png"), cv2.IMREAD_GRAYSCALE),
+                cv2.imread(os.path.join("images", "captcha.png"), cv2.IMREAD_GRAYSCALE)
             ]
 
             for template in templates:
